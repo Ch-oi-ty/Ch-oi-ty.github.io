@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    background-image: url('image/flower4.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    color: white; /* Default font color for the body */
+}
+
+/* Add a transparent background to sections for better readability */
+section {
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent black background */
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+.homemade-apple-regular {
+  font-family: "Homemade Apple", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.carousel-item img {
+  height: 80vh;
+  width:50vh;
+}
+
+.timeline {
+  position: relative;
+  margin: 50px auto;
+  padding: 20px 0;
+  width: 90%;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background: #6f42c1; /* Purple */
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 30px;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+  text-align: left;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  background: #6f42c1; /* Purple */
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-content {
+  background: white;
+  border-radius: 10px;
+  color: black; /* Text color for content on white background */
+}
+
+.about-me-section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: black; /* Text color for content on semi-transparent white background */
+}
+
+.social-icons a {
+    font-size: 2rem;
+    margin-right: 15px;
+    color: white; /* Default social icon color */
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+/* Specific colors for social icons */
+.fab.fa-linkedin {
+    color: #0A66C2; /* LinkedIn blue */
+}
+
+.fab.fa-github {
+    color: white; /* GitHub white */
+}
+
+.fab.fa-facebook {
+    color: #1877F2; /* Facebook blue */
+}
+
+.nav-link, .navbar-brand {
+    color: white !important; /* Navigation links and brand color */
+}
+
+.card-title, .card-text, small.text-muted {
+    color: black !important; /* Card text colors changed to black */
+}
+
+#home h1 {
+    color: white !important; /* "Welcome to My Portfolio" heading color */
+}
+
+#project h1 {
+    color: white !important; /* "Projects" heading color */
+}
+
+#home p {
+    color: white !important; /* Paragraphs inside Home section color */
+}
+
+#contact {
+    color: white !important; /* All font within Contact section color */
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 768px){
+  .timeline::before{
+      left: 8px;
+  }
+  .timeline-item{
+      width: 100%;
+      padding-left: 40px;
+      padding-right: 25px;
+      margin-bottom: 20px;
+  }
+  .timeline-item:nth-child(even){
+      left: 0;
+  }
+  .timeline-dot{
+      left: 8px;
+  }
+}
