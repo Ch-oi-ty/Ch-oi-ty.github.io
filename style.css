@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 body {
-    background-image: url('image/flower4.jpg');
+    background-image: url('image/glass.jpg');
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Montserrat', sans-serif;
-    color: white; /* Default font color for the body */
+    color: black; /* Default font color for the body */
 }
 
 /* Add a transparent background to sections for better readability */
 section {
-    background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent black background */
+    background-color: rgba(255, 255, 255, 0.1); /* Very slightly transparent white background */
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Glass effect */
     padding: 20px 0;
     margin-bottom: 30px;
 }
@@ -72,23 +76,32 @@ section {
 }
 
 .timeline-content {
-  background: white;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   color: black; /* Text color for content on white background */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Glass effect */
 }
 
 .about-me-section {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly more opaque for prominence */
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     color: black; /* Text color for content on semi-transparent white background */
+}
+
+#about {
+    min-height: 80vh; /* Make the about section taller */
+}
+
+#aboutMeCarousel .carousel-item img {
+    object-fit: cover; /* Ensure images cover the area without distortion */
 }
 
 .social-icons a {
     font-size: 2rem;
     margin-right: 15px;
-    color: white; /* Default social icon color */
+    color: black; /* Default social icon color */
     transition: color 0.3s;
 }
 
@@ -102,7 +115,7 @@ section {
 }
 
 .fab.fa-github {
-    color: white; /* GitHub white */
+    color: black; /* GitHub white */
 }
 
 .fab.fa-facebook {
@@ -110,27 +123,28 @@ section {
 }
 
 .nav-link, .navbar-brand {
-    color: white !important; /* Navigation links and brand color */
+    color: black !important; /* Navigation links and brand color */
 }
 
 .card-title, .card-text, small.text-muted {
-    color: black !important; /* Card text colors changed to black */
+    color: black !important; /* Card text colors changed to white for glass background */
 }
 
 #home h1 {
-    color: white !important; /* "Welcome to My Portfolio" heading color */
+    color: black !important; /* "Welcome to My Portfolio" heading color */
 }
 
 #project h1 {
-    color: white !important; /* "Projects" heading color */
+    color: black !important; /* "Projects" heading color */
 }
 
 #home p {
-    color: white !important; /* Paragraphs inside Home section color */
+    color: black !important; /* Paragraphs inside Home section color */
+    font-size: 1.1em; /* Increased font size for home section paragraphs */
 }
 
 #contact {
-    color: white !important; /* All font within Contact section color */
+    color: black !important; /* All font within Contact section color */
 }
 
 /* Mobile responsive */
